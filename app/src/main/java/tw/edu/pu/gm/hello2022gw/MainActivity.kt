@@ -8,6 +8,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+    }
 
         var txv:TextView = findViewById<TextView>(R.id.txv)
         txv.text = "Hello gw"
@@ -16,6 +17,18 @@ class MainActivity : AppCompatActivity() {
     fun TestMaster(){
         var txv:TextView = findViewById<TextView>(R.id.txv)
         txv.text = "Master分支"}
+
+
+
+        var txv:TextView = findViewById<TextView>(R.id.txv)
+        txv.text = "Hello gw"
+        TestDEV()
+    }
+
+    fun TestDEV(){
+        var txv:TextView = findViewById<TextView>(R.id.txv)
+        txv.text = "Dev分支"
+    }
 
 
 
